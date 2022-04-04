@@ -102,6 +102,7 @@ public class JobsGet {
 //		assertThat(responseWithoutNan,
 //				matchesJsonSchemaInClasspath(ff.getAbsolutePath()));
 		
+		System.out.println("Adding print statement");
 		//Json schema validation
 		assertThat(responseString,
 				matchesJsonSchemaInClasspath("schema/jobsSchema.json"));
