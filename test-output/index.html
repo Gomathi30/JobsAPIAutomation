@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 5 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsPost" class="method navigator-link" hash-for-method="PostJob(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)">PostJob(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsPost" class="method navigator-link" hash-for-method="PostJob(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)">PostJob(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsGet" class="method navigator-link" hash-for-method="getall">getall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsPut" class="method navigator-link" hash-for-method="putJob(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes)">putJob(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsPut" class="method navigator-link" hash-for-method="putJob(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes)">putJob(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsDelete" class="method navigator-link" hash-for-method="deleteJob(1011)">deleteJob(1011)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsDelete" class="method navigator-link" hash-for-method="deleteJob(1014)">deleteJob(1014)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsDelete" class="method navigator-link" hash-for-method="deleteJob(1015)">deleteJob(1015)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.rest.assured.JobsDelete" class="method navigator-link" hash-for-method="deleteJob(1013)">deleteJob(1013)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rest.assured.JobsPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostJob(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)">
+                  </a> <!-- PostJob(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel) -->
+                  <span class="method-name">PostJob</span>
+                  <span class="parameters">(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</span>
+                  <div class="stack-trace">io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.rest.assured.JobsPost.PostJob(JobsPost.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+	... 33 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostJob(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)">
+                  </a> <!-- PostJob(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel) -->
+                  <span class="method-name">PostJob</span>
+                  <span class="parameters">(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</span>
+                  <div class="stack-trace">io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.rest.assured.JobsPost.PostJob(JobsPost.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+	... 33 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rest.assured.JobsGet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getall">
+                  </a> <!-- getall -->
+                  <span class="method-name">getall</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;503&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.rest.assured.JobsGet.getall(JobsGet.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.rest.assured.JobsPut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="putJob(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes)">
+                  </a> <!-- putJob(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes) -->
+                  <span class="method-name">putJob</span>
+                  <span class="parameters">(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes)</span>
+                  <div class="stack-trace">io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.rest.assured.JobsPut.putJob(JobsPut.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+	... 33 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putJob(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes)">
+                  </a> <!-- putJob(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes) -->
+                  <span class="method-name">putJob</span>
+                  <span class="parameters">(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes)</span>
+                  <div class="stack-trace">io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+	at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at com.rest.assured.JobsPut.putJob(JobsPut.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;&lt;&apos; (code 60)): expected a valid value (JSON String, Number, Array, Object or token &apos;null&apos;, &apos;true&apos; or &apos;false&apos;)
+ at [Source: (StringReader); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+	at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+	at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+	at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+	at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+	at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+	... 33 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.rest.assured.JobsDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteJob(1011)">
+                  </a> <!-- deleteJob(1011) -->
+                  <span class="method-name">deleteJob</span>
+                  <span class="parameters">(1011)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteJob(1014)">
+                  </a> <!-- deleteJob(1014) -->
+                  <span class="method-name">deleteJob</span>
+                  <span class="parameters">(1014)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteJob(1015)">
+                  </a> <!-- deleteJob(1015) -->
+                  <span class="method-name">deleteJob</span>
+                  <span class="parameters">(1015)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteJob(1013)">
+                  </a> <!-- deleteJob(1013) -->
+                  <span class="method-name">deleteJob</span>
+                  <span class="parameters">(1013)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/suresh/eclipse-workspace/JobsAPIAutomation/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.rest.assured.JobsPost&quot;/&gt;
+      &lt;class name=&quot;com.rest.assured.JobsGet&quot;/&gt;
+      &lt;class name=&quot;com.rest.assured.JobsPut&quot;/&gt;
+      &lt;class name=&quot;com.rest.assured.JobsDelete&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'PostJob')
+data.setCell(0, 2, 'com.rest.assured.JobsPost')
+data.setCell(0, 3, 2093);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteJob')
+data.setCell(1, 2, 'com.rest.assured.JobsDelete')
+data.setCell(1, 3, 268);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteJob')
+data.setCell(2, 2, 'com.rest.assured.JobsDelete')
+data.setCell(2, 3, 265);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'putJob')
+data.setCell(3, 2, 'com.rest.assured.JobsPut')
+data.setCell(3, 3, 249);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getall')
+data.setCell(4, 2, 'com.rest.assured.JobsGet')
+data.setCell(4, 3, 229);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleteJob')
+data.setCell(5, 2, 'com.rest.assured.JobsDelete')
+data.setCell(5, 3, 215);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'PostJob')
+data.setCell(6, 2, 'com.rest.assured.JobsPost')
+data.setCell(6, 3, 204);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'putJob')
+data.setCell(7, 2, 'com.rest.assured.JobsPut')
+data.setCell(7, 3, 195);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteJob')
+data.setCell(8, 2, 'com.rest.assured.JobsDelete')
+data.setCell(8, 3, 165);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rest.assured.JobsPost</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PostJob(1084, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PostJob(1017, SDET61, NumpyNinja, PA, Permanent, 15 minutes, Data driven testing from excel)</span>
+                <span class="method-start">2097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rest.assured.JobsGet</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getall</span>
+                <span class="method-start">2307 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rest.assured.JobsPut</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">putJob(10051, SDET61, NumpyNinjaPut, PA, Permanent, 15 minutes)</span>
+                <span class="method-start">2603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">putJob(10052, SDET62, NumpyNinPut, NY, Contract, 0 minutes)</span>
+                <span class="method-start">2802 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.rest.assured.JobsDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">deleteJob(1011)</span>
+                <span class="method-start">3106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteJob(1013)</span>
+                <span class="method-start">3273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteJob(1014)</span>
+                <span class="method-start">3489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteJob(1015)</span>
+                <span class="method-start">3755 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

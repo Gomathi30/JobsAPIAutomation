@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.rest.assured.JobsPost">
+        <methods>
+          <include name="PostJob" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.rest.assured.JobsPost -->
+      <class name="com.rest.assured.JobsGet">
+        <methods>
+          <include name="getall"/>
+        </methods>
+      </class> <!-- com.rest.assured.JobsGet -->
+      <class name="com.rest.assured.JobsPut">
+        <methods>
+          <include name="putJob" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.rest.assured.JobsPut -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

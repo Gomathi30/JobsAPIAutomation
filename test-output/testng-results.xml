@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="4" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-29T23:27:37 EDT" name="Suite" finished-at="2022-03-29T23:27:43 EDT" duration-ms="5872">
+    <groups>
+    </groups>
+    <test started-at="2022-03-29T23:27:37 EDT" name="Test" finished-at="2022-03-29T23:27:43 EDT" duration-ms="5872">
+      <class name="com.rest.assured.JobsPut">
+        <test-method signature="putJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rest.assured.JobsPut@3e84448c]" started-at="2022-03-29T23:27:41 EDT" name="putJob" data-provider="PutData" finished-at="2022-03-29T23:27:42 EDT" duration-ms="195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10051]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SDET61]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NumpyNinjaPut]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Permanent]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15 minutes]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.restassured.module.jsv.JsonSchemaValidationException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.rest.assured.JobsPut.putJob(JobsPut.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.module.jsv.JsonSchemaValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putJob -->
+        <test-method signature="putJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rest.assured.JobsPut@3e84448c]" started-at="2022-03-29T23:27:42 EDT" name="putJob" data-provider="PutData" finished-at="2022-03-29T23:27:42 EDT" duration-ms="249" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10052]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SDET62]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NumpyNinPut]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NY]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Contract]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0 minutes]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.restassured.module.jsv.JsonSchemaValidationException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.rest.assured.JobsPut.putJob(JobsPut.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.module.jsv.JsonSchemaValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putJob -->
+      </class> <!-- com.rest.assured.JobsPut -->
+      <class name="com.rest.assured.JobsPost">
+        <test-method signature="PostJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rest.assured.JobsPost@2fd1433e]" started-at="2022-03-29T23:27:39 EDT" name="PostJob" data-provider="PostData" finished-at="2022-03-29T23:27:41 EDT" duration-ms="2093" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1084]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SDET61]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NumpyNinja]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Permanent]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15 minutes]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Data driven testing from excel]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.restassured.module.jsv.JsonSchemaValidationException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.rest.assured.JobsPost.PostJob(JobsPost.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.module.jsv.JsonSchemaValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostJob -->
+        <test-method signature="PostJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.rest.assured.JobsPost@2fd1433e]" started-at="2022-03-29T23:27:41 EDT" name="PostJob" data-provider="PostData" finished-at="2022-03-29T23:27:41 EDT" duration-ms="204" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1017]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SDET61]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NumpyNinja]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PA]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Permanent]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[15 minutes]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Data driven testing from excel]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.restassured.module.jsv.JsonSchemaValidationException">
+            <message>
+              <![CDATA[com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.module.jsv.JsonSchemaValidationException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:233)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:75)
+at org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:10)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at com.rest.assured.JobsPost.PostJob(JobsPost.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (StringReader); line: 1, column: 2]
+at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1851)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:707)
+at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:632)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1941)
+at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:776)
+at com.fasterxml.jackson.databind.MappingIterator.hasNextValue(MappingIterator.java:243)
+at com.github.fge.jackson.JsonNodeReader.readNode(JsonNodeReader.java:149)
+at com.github.fge.jackson.JsonNodeReader.fromReader(JsonNodeReader.java:129)
+at com.github.fge.jackson.JsonLoader.fromReader(JsonLoader.java:186)
+at com.github.fge.jackson.JsonLoader.fromString(JsonLoader.java:199)
+at io.restassured.module.jsv.JsonSchemaValidator.matchesSafely(JsonSchemaValidator.java:214)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.module.jsv.JsonSchemaValidationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostJob -->
+      </class> <!-- com.rest.assured.JobsPost -->
+      <class name="com.rest.assured.JobsDelete">
+        <test-method signature="deleteJob(java.lang.String)[pri:0, instance:com.rest.assured.JobsDelete@4a7f959b]" started-at="2022-03-29T23:27:42 EDT" name="deleteJob" data-provider="DeleteData" finished-at="2022-03-29T23:27:42 EDT" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJob -->
+        <test-method signature="deleteJob(java.lang.String)[pri:0, instance:com.rest.assured.JobsDelete@4a7f959b]" started-at="2022-03-29T23:27:42 EDT" name="deleteJob" data-provider="DeleteData" finished-at="2022-03-29T23:27:42 EDT" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1013]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJob -->
+        <test-method signature="deleteJob(java.lang.String)[pri:0, instance:com.rest.assured.JobsDelete@4a7f959b]" started-at="2022-03-29T23:27:42 EDT" name="deleteJob" data-provider="DeleteData" finished-at="2022-03-29T23:27:43 EDT" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1014]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJob -->
+        <test-method signature="deleteJob(java.lang.String)[pri:0, instance:com.rest.assured.JobsDelete@4a7f959b]" started-at="2022-03-29T23:27:43 EDT" name="deleteJob" data-provider="DeleteData" finished-at="2022-03-29T23:27:43 EDT" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteJob -->
+      </class> <!-- com.rest.assured.JobsDelete -->
+      <class name="com.rest.assured.JobsGet">
+        <test-method signature="getall()[pri:0, instance:com.rest.assured.JobsGet@4d5b6aac]" started-at="2022-03-29T23:27:41 EDT" name="getall" finished-at="2022-03-29T23:27:41 EDT" duration-ms="229" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <503>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <503>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at com.rest.assured.JobsGet.getall(JobsGet.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getall -->
+      </class> <!-- com.rest.assured.JobsGet -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
